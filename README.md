@@ -2,6 +2,13 @@
 
 > M1 comes with php7.4 by default, laravel now used  PHP 8.0
 
+
+## Install Brew
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 ## Upgrade with `shivammathur/homebrew-php`
 
 ```
@@ -12,7 +19,7 @@ brew install shivammathur/php/php@8.0
 brew link --overwrite --force php@8.0
 ```
 
-## To Uninstall
+## To Uninstall PHP
 
 ```
 brew unlink php && brew link php
@@ -49,6 +56,8 @@ You can use `valet use` to switch between PHP versions:
 ```bash
 valet use php@8.0
 valet use php@7.4
+// after changing php version do this
+composer global update
 ```
 
 
